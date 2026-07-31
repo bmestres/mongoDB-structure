@@ -1,0 +1,17 @@
+services:
+    mongo:
+        image: mongo:latest
+        ports:
+            - '27017:27017'
+        container_name: dkrcomp-mongo
+        restart: always
+        logging:
+            options:
+                max-size: 1g
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+            - MONGO_INITDB_ROOT_PASSWORD=bdung
+        volumes:
+            - mongo-data:/data/db
+volumes:
+    mongo-data:
