@@ -314,7 +314,7 @@
 				},
 				{
 					"id": "75338c43-36ad-4188-89f1-62d6861998df",
-					"name": "provider__id",
+					"name": "provider_id",
 					"datatype": "objectId",
 					"param": "",
 					"pk": false,
