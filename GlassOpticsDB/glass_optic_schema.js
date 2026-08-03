@@ -163,7 +163,7 @@ db.createCollection("sale", {
     $jsonSchema: {
       "bsonType": "object",
       "title": "sale",
-      "required": ["product_line", "employee", "date", "time", "total_price"],
+      "required": ["product_line", "employee", "date", "time", "total_price", "client"],
       "properties": {
         "product_line": {
           "bsonType": "array",
@@ -201,9 +201,11 @@ db.createCollection("sale", {
         },
         "total_price": {
           "bsonType": "decimal"
+        },
+        "client": {
+          "bsonType": "objectId"
         }
       }
     }
   },
-
 });

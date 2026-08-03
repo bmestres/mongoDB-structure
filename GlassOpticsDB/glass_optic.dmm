@@ -15,7 +15,8 @@
 				}
 			],
 			"relations": [
-				"d4b53801-5cb0-4d41-be57-61d0244c3ef1"
+				"d4b53801-5cb0-4d41-be57-61d0244c3ef1",
+				"ff08cd3b-36d6-417e-8a69-8494e0fc41e3"
 			],
 			"visible": true,
 			"afterScript": "",
@@ -532,7 +533,9 @@
 					}
 				}
 			],
-			"relations": [],
+			"relations": [
+				"ff08cd3b-36d6-417e-8a69-8494e0fc41e3"
+			],
 			"visible": true,
 			"afterScript": "",
 			"cols": [
@@ -630,6 +633,23 @@
 					"nn": true,
 					"list": false,
 					"fk": false,
+					"comment": "",
+					"data": "",
+					"enum": "",
+					"validation": "",
+					"pattern": false,
+					"estimatedSize": "",
+					"any": ""
+				},
+				{
+					"id": "12b75f5c-36ac-4aab-85a9-90525eca96d2",
+					"name": "client",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"fk": true,
 					"comment": "",
 					"data": "",
 					"enum": "",
@@ -1334,6 +1354,31 @@
 			"generate": true,
 			"generateCustomCode": true,
 			"customCode": ""
+		},
+		"ff08cd3b-36d6-417e-8a69-8494e0fc41e3": {
+			"id": "ff08cd3b-36d6-417e-8a69-8494e0fc41e3",
+			"name": "client_sale",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "2dbb8c9c-bdc2-42a1-89ce-2c1a2f3b6749",
+			"parent": "03065fb7-426f-4eb9-8da9-02a862f25520",
+			"child": "1b565af6-b19b-4d57-9d1a-d14830e05706",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "36ba2c4d-35de-4ae3-9d5b-911f20cef608",
+					"parentcol": "baa56481-27c2-44b4-a696-633a9a947482",
+					"childcol": "12b75f5c-36ac-4aab-85a9-90525eca96d2"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": ""
 		}
 	},
 	"notes": {},
@@ -1482,8 +1527,8 @@
 			"description": "",
 			"diagramItems": {
 				"03065fb7-426f-4eb9-8da9-02a862f25520": {
-					"x": 45,
-					"y": 86,
+					"x": 101,
+					"y": 93,
 					"gHeight": 168,
 					"gWidth": 238,
 					"background": "#03a9f4",
@@ -1505,8 +1550,8 @@
 					"cardBackground": "transparent"
 				},
 				"227a6dff-939b-407a-8aa5-64b01474a384": {
-					"x": 326,
-					"y": 81,
+					"x": 382,
+					"y": 88,
 					"gHeight": 187,
 					"gWidth": 224,
 					"background": "#03a9f4",
@@ -1528,8 +1573,8 @@
 					"cardBackground": "transparent"
 				},
 				"3f990738-594c-4440-a599-e251fec46ef4": {
-					"x": 267,
-					"y": 296,
+					"x": 323,
+					"y": 303,
 					"gHeight": 153,
 					"gWidth": 258,
 					"background": "#03a9f4",
@@ -1551,10 +1596,10 @@
 					"cardBackground": "transparent"
 				},
 				"1b565af6-b19b-4d57-9d1a-d14830e05706": {
-					"x": 45,
-					"y": 541,
-					"gHeight": 208,
-					"gWidth": 272,
+					"x": 101,
+					"y": 548,
+					"gHeight": 168,
+					"gWidth": 268,
 					"background": "#03a9f4",
 					"color": "#ffffff",
 					"referencedItemId": "1b565af6-b19b-4d57-9d1a-d14830e05706",
@@ -1575,8 +1620,8 @@
 				},
 				"3ca2ba5d-1644-480a-8e69-88207fea9e35": {
 					"referencedItemId": "3ca2ba5d-1644-480a-8e69-88207fea9e35",
-					"x": 618,
-					"y": 142,
+					"x": 674,
+					"y": 149,
 					"gHeight": 63,
 					"gWidth": 177,
 					"color": "transparent",
@@ -1598,8 +1643,8 @@
 				},
 				"74c1a053-c972-404e-be6d-58ea8c544180": {
 					"referencedItemId": "74c1a053-c972-404e-be6d-58ea8c544180",
-					"x": 625,
-					"y": 226,
+					"x": 681,
+					"y": 233,
 					"gHeight": 63,
 					"gWidth": 168,
 					"color": "transparent",
@@ -1621,8 +1666,8 @@
 				},
 				"4f5fd8af-d8e6-4410-92e6-8ae8968a59ee": {
 					"referencedItemId": "4f5fd8af-d8e6-4410-92e6-8ae8968a59ee",
-					"x": 600,
-					"y": 387,
+					"x": 656,
+					"y": 394,
 					"gHeight": 153,
 					"gWidth": 191,
 					"color": "transparent",
@@ -1644,8 +1689,8 @@
 				},
 				"719e9ce2-75e4-40ec-96dc-7411c3ea9eef": {
 					"referencedItemId": "719e9ce2-75e4-40ec-96dc-7411c3ea9eef",
-					"x": 45,
-					"y": 281,
+					"x": 101,
+					"y": 288,
 					"gHeight": 172,
 					"gWidth": 176,
 					"color": "transparent",
@@ -1667,8 +1712,8 @@
 				},
 				"7a814887-1ae2-4511-967c-ba59f8afb67f": {
 					"referencedItemId": "7a814887-1ae2-4511-967c-ba59f8afb67f",
-					"x": 430,
-					"y": 692,
+					"x": 486,
+					"y": 699,
 					"gHeight": 45,
 					"gWidth": 172,
 					"color": "transparent",
@@ -1690,8 +1735,8 @@
 				},
 				"57633c7e-d362-4a95-a8e6-c85c76874107": {
 					"referencedItemId": "57633c7e-d362-4a95-a8e6-c85c76874107",
-					"x": 428,
-					"y": 578,
+					"x": 484,
+					"y": 585,
 					"gHeight": 81,
 					"gWidth": 193,
 					"color": "transparent",
@@ -1811,6 +1856,17 @@
 					"anchorDetailedEnd": "default",
 					"width": 2,
 					"points": []
+				},
+				"ff08cd3b-36d6-417e-8a69-8494e0fc41e3": {
+					"referencedItemId": "ff08cd3b-36d6-417e-8a69-8494e0fc41e3",
+					"color": "transparent",
+					"mode": "default",
+					"anchorStart": "default",
+					"anchorEnd": "default",
+					"anchorDetailedStart": "default",
+					"anchorDetailedEnd": "default",
+					"width": 2,
+					"points": []
 				}
 			},
 			"isOpen": true,
@@ -1866,7 +1922,8 @@
 	"order": [
 		"eee877b1-6e62-4961-8e35-22d4daa66caf",
 		"d4b53801-5cb0-4d41-be57-61d0244c3ef1",
-		"d6d208d1-6b5d-4dda-910d-b166a33ae730"
+		"d6d208d1-6b5d-4dda-910d-b166a33ae730",
+		"ff08cd3b-36d6-417e-8a69-8494e0fc41e3"
 	],
 	"collapsedTreeItems": [],
 	"reverseStats": {}
